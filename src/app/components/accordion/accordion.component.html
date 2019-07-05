@@ -1,0 +1,15 @@
+<ngb-accordion #a="ngbAccordion" activeIds="custom-panel-1" class="c-accordion">
+  <ngb-panel id="custom-panel-{{ i + 1 }}" *ngFor="let faq of (faqs$ | async); let i = index">
+    <ng-template ngbPanelHeader let-opened="opened" class="c-accordion__item">
+      <div class="d-flex align-items-center justify-content-between">
+        <button ngbPanelToggle class="btn btn-link container-fluid text-left pl-0">
+          <span class="m-0">Q: {{ faq.question }}</span>
+          <span class="p-0 float-right">{{ opened ? '[-]' : '[+]' }}</span>
+        </button>
+      </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      {{ faq.answer }}
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>

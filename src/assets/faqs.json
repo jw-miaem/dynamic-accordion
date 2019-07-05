@@ -1,0 +1,19 @@
+{
+    "info": {
+        "responseCode": 200,
+        "responseMsg": "Success"
+    },
+    "faqs": [{
+        "id": 1,
+        "question": "What is Wunderman Thompson Commerce about?",
+        "answer": "Building great sites for our amazing clients. Simple."
+    }, {
+        "id": 3,
+        "question": "What are the Wunderman Thompson Commerce office locations?",
+        "answer": "We have offices worldwide - In the UK these are London, Watford and Cornwall"
+    }, {
+        "id": 5,
+        "question": "Is this the last question?",
+        "answer": "Yes. You have done well!"
+    }]
+}
